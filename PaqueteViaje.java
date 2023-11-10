@@ -7,9 +7,7 @@ public class PaqueteViaje {
     private String lugarOrigen;
     private double precio;
 
-    private AgenciaViaje agencia;
-
-    public PaqueteViaje(int duracionDias, String fechaRegreso, String fechaSalida, boolean incluirExcursiones, String lugarDestino, String lugarOrigen, double precio) {
+    public PaqueteViaje(int duracionDias, String fechaRegreso, String fechaSalida, boolean incluirExcursiones,String lugarDestino, String lugarOrigen, double precio) {
         this.duracionDias = duracionDias;
         this.fechaRegreso = fechaRegreso;
         this.fechaSalida = fechaSalida;
@@ -70,23 +68,11 @@ public class PaqueteViaje {
         return precio;
     }
 
-    public AgenciaViaje getAgencia() {
-       return agencia;
-    }
-
-    public void setAgencia(AgenciaViaje agencia) {
-        this.agencia = agencia;
-    }
-
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     public void calcularPrecioTotal(int valorTotal){
-        System.out.println("El precio total del paquete de viaje es: " + valorTotal);
-    }
-
-    public void composicionAgencia (AgenciaViaje agencia) {
-        this.agencia = agencia;
+        System.out.println("La agencia determina que el valor total es de: " + valorTotal);
     }
 }

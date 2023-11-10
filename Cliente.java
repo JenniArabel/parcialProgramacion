@@ -4,26 +4,26 @@ public class Cliente {
     private String domicilioCalle;
     private int domicilioNumeracion;
     private String email;
-    private String nombre;
+    private String nombreCliente;
     private int numeroTelefono;
     private AgenciaViaje agencia;
     private Facturacion facturacion;
 
 
-    public Cliente(int cantidadPasajeros, int dni, String domicilioCalle, int domicilioNumeracion, String email, String nombre, int numeroTelefono) {
+    public Cliente(int cantidadPasajeros, int dni, String domicilioCalle, int domicilioNumeracion, String email, String nombreCliente, int numeroTelefono) {
         this.cantidadPasajeros = cantidadPasajeros;
         this.dni = dni;
         this.domicilioCalle = domicilioCalle;
         this.domicilioNumeracion = domicilioNumeracion;
         this.email = email;
-        this.nombre = nombre;
+        this.nombreCliente = nombreCliente;
         this.numeroTelefono = numeroTelefono;
     }
 
-    public Cliente(AgenciaViaje agencia, Facturacion facturacion) {
-        this.agencia = agencia;
-        this.facturacion = facturacion;
-    }
+    //public Cliente(AgenciaViaje agencia, Facturacion facturacion) {
+    //    this.agencia = agencia;
+    //    this.facturacion = facturacion;
+    //}
 
     public AgenciaViaje getAgencia() {
         return agencia;
@@ -81,12 +81,12 @@ public class Cliente {
         this.email = email;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreCliente() {
+        return nombreCliente;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
     }
 
     public int getNumeroTelefono() {
@@ -96,10 +96,10 @@ public class Cliente {
     public void setNumeroTelefono(int numeroTelefono) {
         this.numeroTelefono = numeroTelefono;
     }
-    public void cancelarViaje(boolean iscancelado){
-        System.out.println("Desea cancelar su viaje: "+ iscancelado);
+    public void cancelarViaje(boolean isCancelado){
+        System.out.println("Desea el cliente, antes de facturar, cancelar el viaje? " + isCancelado);
     }
-    public void reservarViaje(boolean reservado){ System.out.println("Desea reservar su viaje: "+ reservado); }
+    public void reservarViaje(boolean reservado){ System.out.println("Por ende, desea reservar viaje y continuar con la facturacion? "+ reservado); }
 
     public void composicionFacturacion (Facturacion facturacion1 ){
         this.facturacion = facturacion1;

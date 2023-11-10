@@ -5,15 +5,17 @@ public class Alojamiento {
     private String nombreHotel;
     private String tipoHabitacion;
     private PaqueteViaje paqueteViaje;
-    public Alojamiento(int cantidadEstrellas, String checkIn, String checkOut, String nombreHotel, String tipoHabitacion, PaqueteViaje paqueteViaje) {
+
+    public Alojamiento(int cantidadEstrellas, String checkIn, String checkOut, String nombreHotel, String tipoHabitacion) {
         this.cantidadEstrellas = cantidadEstrellas;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
         this.nombreHotel = nombreHotel;
         this.tipoHabitacion = tipoHabitacion;
+    }
+    public Alojamiento(PaqueteViaje paqueteViaje) {
         this.paqueteViaje = paqueteViaje;
     }
-
     public int getCantidadEstrellas() {
         return cantidadEstrellas;
     }

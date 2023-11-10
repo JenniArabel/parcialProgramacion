@@ -3,8 +3,6 @@ public class Facturacion {
     private String metodoPago;
     private double montoTotal;
 
-
-
     public Facturacion(String cliente, String metodoPago, double montoTotal) {
         this.cliente = cliente;
         this.metodoPago = metodoPago;
@@ -36,7 +34,10 @@ public class Facturacion {
     }
 
     public void generarRecibo(boolean recibo){
-        System.out.println("Desea imprimir ");
+        System.out.println("Recibo generado? " + recibo);
+    }
+    public void procesarPago (boolean pago){
+        System.out.println("Desea procesar pago? " + pago);
     }
 
 

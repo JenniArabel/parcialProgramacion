@@ -13,13 +13,13 @@ public class ErrorVenta {
     }
 
     public void Error(boolean isError){
-        System.out.println("¿Usted tiene una sobreventa? "+isError);
+        System.out.println("Esta contratacion presenta algun error de sobreventa? "+isError);
     }
     public void devolverdinero(boolean isdevolverdinero){
-        System.out.println("¿Desea un rembolso? "+isdevolverdinero);
+        System.out.println("Por lo tanto, se requiere de alguna medida como: reembolso? "+isdevolverdinero);
     }
     public void reprogramar(boolean isreprogramar){
-        System.out.println("¿Desea reprogramar su viaje? "+isreprogramar);
+        System.out.println("o reprogramar fecha de viaje? "+isreprogramar);
     }
 }
 

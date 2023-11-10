@@ -2,12 +2,12 @@ public class Transporte {
     private String tipoDeTransporte;
     private PaqueteViaje paqueteViaje;
 
-    public Transporte(String tipoDeTransporte, PaqueteViaje paqueteViaje) {
+    public Transporte(String tipoDeTransporte) {
         this.tipoDeTransporte = tipoDeTransporte;
-        this.paqueteViaje = paqueteViaje;
-
     }
-
+    public Transporte(PaqueteViaje paqueteViaje) {
+        this.paqueteViaje = paqueteViaje;
+    }
     public String getTipoDeTransporte() {
         return tipoDeTransporte;
     }
@@ -25,10 +25,10 @@ public class Transporte {
     }
 
     public void transporteAutobus(boolean isAutobus){
-        System.out.println("El medio de transporte elegido es autobus?: " + isAutobus);
+        System.out.println("El cliente desea viajar en autobus de larga distancia? " + isAutobus);
     }
     public void transporteAvion(boolean isAvion){
-        System.out.println("El medio de transporte elegido es autobus?: " + isAvion);
+        System.out.println("El cliente desea viajar en avion? " + isAvion);
     }
     public void agregarPaquete(PaqueteViaje paqueteViaje1){
         this.setPaqueteViaje(paqueteViaje1);

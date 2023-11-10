@@ -4,7 +4,16 @@ public class AgenciaViaje {
     private int numerotelefonoagencia;
     private Cliente cliente;
     private PaqueteViaje paqueteviaje;
+    private Facturacion facturacion;
 
+    public AgenciaViaje(String domicilio, String nombre, int numerotelefonoagencia, Cliente cliente, PaqueteViaje paqueteviaje, Facturacion facturacion) {
+        this.domicilio = domicilio;
+        this.nombre = nombre;
+        this.numerotelefonoagencia = numerotelefonoagencia;
+        this.cliente = cliente;
+        this.paqueteviaje = paqueteviaje;
+        this.facturacion = facturacion;
+    }
     public String getdomicilio() {
         return domicilio;
     }
@@ -42,15 +51,23 @@ public class AgenciaViaje {
     }
 
     public void crearCliente(String nombreCliente) {
-        System.out.println("Nombre del cliente: "+ nombreCliente);
+        System.out.println("Creando viaje a nombre de: "+ nombreCliente);
     }
 
     public void crearviaje(boolean isCrear){
-        System.out.println("¿Desea crear paquete de viaje? "+ isCrear);
+        System.out.println("¿Desea la empresa crear un nuevo viaje en el sistema? "+ isCrear);
+    }
+
+    public Facturacion getFacturacion() {
+        return facturacion;
+    }
+
+    public void setFacturacion(Facturacion facturacion) {
+        this.facturacion = facturacion;
     }
 
     public void realizarVenta(boolean isRealizarVentas){
-        System.out.println("¿Desea realizar la venta? "+ isRealizarVentas);
+        System.out.println("La empresa recibe el aceptamiento del cliente, desea realizar venta? "+ isRealizarVentas);
     }
 
      public void composicionCliente(Cliente cliente) {
