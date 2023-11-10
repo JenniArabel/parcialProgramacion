@@ -22,3 +22,4 @@ public class ErrorVenta {
         System.out.println("¿Desea reprogramar su viaje? "+isreprogramar);
     }
 }
+
