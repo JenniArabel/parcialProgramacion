@@ -2,8 +2,8 @@ public class AgenciaViaje {
     private String domicilio;
     private String nombre;
     private int numerotelefonoagencia;
-    //private Cliente cliente;
-    //private PaqueteViaje paqueteviaje;
+    private Cliente cliente;
+    private PaqueteViaje paqueteviaje;
 
     public String getdomicilio() {
         return domicilio;
@@ -26,20 +26,20 @@ public class AgenciaViaje {
         this.numerotelefonoagencia = numerotelefonoagencia;
     }
 
-    //public Cliente getCliente() {
-    //    return cliente;
-    //}
-    //public void setCliente(Cliente cliente) {
-    //    this.cliente = cliente;
-    //}
+    public Cliente getCliente() {
+        return cliente;
+    }
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 
-    //public PaqueteViaje getPaqueteviaje() {
-    //    return paqueteviaje;
-    //}
+    public PaqueteViaje getPaqueteviaje() {
+        return paqueteviaje;
+    }
 
-    //public void setPaqueteviaje(PaqueteViaje paqueteviaje) {
-    //    this.paqueteviaje = paqueteviaje;
-    //}
+    public void setPaqueteviaje(PaqueteViaje paqueteviaje) {
+        this.paqueteviaje = paqueteviaje;
+    }
 
     public void crearCliente(String nombreCliente) {
         System.out.println("Nombre del cliente: "+ nombreCliente);
@@ -53,12 +53,12 @@ public class AgenciaViaje {
         System.out.println("¿Desea realizar la venta? "+ isRealizarVentas);
     }
 
-    // public void composicionCliente(Cliente cliente) {
-    //    this.cliente=cliente;
-    //}
+     public void composicionCliente(Cliente cliente) {
+        this.cliente=cliente;
+    }
 
-    //public void composicionPaqueteViaje(PaqueteViaje paqueteviaje) {
-    //    this.paqueteviaje=paqueteviaje;
-    //}
+    public void composicionPaqueteViaje(PaqueteViaje paqueteviaje) {
+        this.paqueteviaje=paqueteviaje;
+    }
 }
 
