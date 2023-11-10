@@ -65,7 +65,7 @@ public class Alojamiento {
     }
 
     public void mensajeBienvenida(String bienvenida){
-        System.out.println("Bienvenido a nuestro hotel " + nombreHotel);
+        System.out.println("Bienvenido a nuestro " + nombreHotel);
     }
 
     public void agregarPaqueteViaje (PaqueteViaje paqueteViaje1){
