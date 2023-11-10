@@ -6,7 +6,7 @@ public class Cliente {
     private String email;
     private String nombre;
     private int numeroTelefono;
-    //private AgenciaDeViaje agencia;
+    private AgenciaViaje agencia;
     private Facturacion facturacion;
 
 
@@ -20,18 +20,18 @@ public class Cliente {
         this.numeroTelefono = numeroTelefono;
     }
 
-   // public Cliente(AgenciaDeViaje agencia, Facturacion facturacion) {
-     //   this.agencia = agencia;
-      //  this.facturacion = facturacion;
-   // }
+    public Cliente(AgenciaViaje agencia, Facturacion facturacion) {
+        this.agencia = agencia;
+        this.facturacion = facturacion;
+    }
 
-    //public AgenciaDeViaje getAgencia() {
-     //   return agencia;
-   // }
+    public AgenciaViaje getAgencia() {
+        return agencia;
+    }
 
-   // public void setAgencia(AgenciaDeViaje agencia) {
-    //    this.agencia = agencia;
-   // }
+    public void setAgencia(AgenciaViaje agencia) {
+      this.agencia = agencia;
+    }
 
     public Facturacion getFacturacion() {
         return facturacion;
